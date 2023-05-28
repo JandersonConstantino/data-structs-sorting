@@ -1,16 +1,15 @@
 //
-// Created by Janderson on 5/27/2023.
+// Created by Janderson on 5/28/2023.
 //
 
 #include "gtest/gtest.h"
 
-#include "../src/util/util.h"
-#include "../src/util/output_result.cpp"
-#include "../src/sort/sort.h"
-#include "../src/sort/bubble_sort.cpp"
+#include "../../src/util/util.h"
+#include "../../src/sort/sort.h"
+#include "../../src/sort/selection_sort.cpp"
 
-namespace bubble_sort {
-    TEST(bubble_sort, should_sort_array_without_equal_values) {
+namespace selection_sort {
+    TEST(selection_sort, should_sort_array_without_equal_values) {
         Array value;
         Array expected_result;
 
@@ -30,7 +29,7 @@ namespace bubble_sort {
         value.items[3] = 6;
         value.items[4] = 3;
 
-        sort::bubble_sort(value);
+        sort::selection_sort(value);
 
         EXPECT_EQ(value.size, expected_result.size);
 
@@ -39,7 +38,7 @@ namespace bubble_sort {
         }
     }
 
-    TEST(bubble_sort, should_sort_array_with_equal_values) {
+    TEST(selection_sort, should_sort_array_with_equal_values) {
         Array value;
         Array expected_result;
 
@@ -59,7 +58,7 @@ namespace bubble_sort {
         value.items[3] = 6;
         value.items[4] = 1;
 
-        sort::bubble_sort(value);
+        sort::selection_sort(value);
 
         EXPECT_EQ(value.size, expected_result.size);
 
@@ -68,3 +67,4 @@ namespace bubble_sort {
         }
     }
 }
+

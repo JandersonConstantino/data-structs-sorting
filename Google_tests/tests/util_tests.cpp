@@ -4,9 +4,9 @@
 
 #include "gtest/gtest.h"
 
-#include "../src/util/util.h"
-#include "../src/util/split_string_by_comma.cpp"
-#include "../src/util/change_element_position.cpp"
+#include "../../src/util/util.h"
+#include "../../src/util/split_string_by_comma.cpp"
+#include "../../src/util/change_element_position.cpp"
 
 namespace split_string_by_comma {
     TEST(split_string_by_comma, should_transform_string_without_comma) {
