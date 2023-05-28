@@ -9,8 +9,8 @@
 class sort {
 public:
     static void bubble_sort(Array array);
-    static void insertion_sort();
-    static void selection_sort();
+    static void insertion_sort(Array array);
+    static void selection_sort(Array array);
 };
 
 #endif //DATA_STRUCT_SORT_SORT_H

@@ -5,6 +5,6 @@
 #include "sort.h"
 #include <iostream>
 
-void sort::insertion_sort() {
+void sort::insertion_sort(Array array) {
     std::cout << "Hello, insertion_sort!" << std::endl;
 }

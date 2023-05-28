@@ -10,6 +10,8 @@ char user_input::user_input_menu_opt() {
 
     std::cout << "Please, choose a option:\n";
     std::cout << "1 - Bubble sort\n";
+    std::cout << "2 - Selection sort\n";
+    std::cout << "3 - Insertion sort\n";
     std::cout << "0 - Exit\n";
     std::cout << "\nEnter your option: ";
     std::cin >> input;
