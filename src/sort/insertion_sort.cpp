@@ -3,8 +3,18 @@
 //
 
 #include "sort.h"
-#include <iostream>
+#include "../util/util.h"
 
 void sort::insertion_sort(Array array) {
-    std::cout << "Hello, insertion_sort!" << std::endl;
+    for (int i = 1; i < array.size; i++) {
+        int key = array.items[i];
+        int j = i - 1;
+
+        while (j >= 0 && array.items[j] > key) {
+            util::change_element_position(&array.items[j + 1], &array.items[j]);
+            j = j - 1;
+        }
+    }
+
+    util::output_result("===== Insertion Sort =====", array);
 }
